@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "buildingsandcivilstructure",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "bcsid": 2, "assetid": "AZ-00-CSB-BD-BID-P-0001", "categorycode": null, "description": "Phed buildings", "yearofconstruction": 1988, "assetid.1": "AZ-00-CSB-BD-BID-P-0001", "city": "Aizwal", "classcode": "BuildingsAndCivilStructure", "classname": "Tuikhuahtlang", "categorycode.1": null, "scheduledmaintenance": true, "repairfrequency": 0.16, "capacity": "at_capacity", "lifeexpectancybenchmark": 50, "financialdepreciation": 5.0, "manufacturer": "Lalsangliana Construcion", "modelnumber": null, "modelmake": null, "dateprocured": "1988-05-22", "procurementvalue": 500000000.0, "residuallife": 5, "supplier": null, "supplieremail": null, "supplierphone": null, "supplieraddress": null, "designdrawings": null, "cof": 1.0, "condition": 2, "locationgen": "0101000020E6100000C0A959B1092E5740CE61084A1BB83740", "wardno": null, "assetimage": null, "imageurl": "C:/Users/jsc(hp)/Desktop/ddstimages\\1684737541947.jpg, C:/Users/jsc(hp)/Desktop/ddstimages\\1684737563767.jpg, C:/Users/jsc(hp)/Desktop/ddstimages\\1684737579008.jpg", "criticality": 2.0, "criticalityvis": 49, "vuln_attribute": 4, "vuln_attribute_name": "High", "geomn3857": "0101000020110F00002A5E98BCC7AF63418EBF0F3BFCBE4441", "wkt": "POINT(10321469.893599588 2719224.461418099)" }, "geometry": { "type": "Point", "coordinates": [ 10321469.893599588423967, 2719224.461418098770082 ] } }
+]
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <DATABASE>
+    <FIELDS>
+      <FIELD TYPE="INTEGER">ID</FIELD>
+      <FIELD TYPE="SHORTINT">VALUE</FIELD>
+      <FIELD TYPE="STRING">NAME</FIELD>
+    </FIELDS>
+  </DATABASE>
+  <SOURCE></SOURCE>
+  <HISTORY saga-version="7.8.2">
+    <TOOL library="ta_channels" id="5" name="Channel Network and Drainage Basins">
+      <OPTION type="grid_system" id="PARAMETERS_GRID_SYSTEM" name="Grid System">
+        <CELLSIZE>32.59556381722044</CELLSIZE>
+        <XMIN>8580429.385248214</XMIN>
+        <XMAX>8600671.23037871</XMAX>
+        <YMIN>3637624.0666368571</YMIN>
+        <YMAX>3652552.834865144</YMAX>
+      </OPTION>
+      <OPTION type="integer" id="THRESHOLD" name="Threshold">4</OPTION>
+      <INPUT type="grid" id="DEM" name="Elevation" system="PARAMETERS_GRID_SYSTEM">
+        <TOOL library="io_gdal" id="0" name="Import Raster">
+          <OPTION type="file" id="FILES" name="Files">"/Users/joelrhine/Library/CloudStorage/Box-Box/Projects/Active/India/Water Systems Project/2. GIS/QGIS Windows/QGIS ARTEMAS 2D/Channel Network and Drainage Basins/Shimla/filled.tif"</OPTION>
+          <OPTION type="choice" id="MULTIPLE" name="Multiple Bands Output" index="2">automatic</OPTION>
+          <OPTION type="text" id="SELECTION" name="Select from Multiple Bands"/>
+          <OPTION type="boolean" id="TRANSFORM" name="Transformation">true</OPTION>
+          <OPTION type="choice" id="RESAMPLING" name="Resampling" index="3">B-Spline Interpolation</OPTION>
+          <OPTION type="choice" id="EXTENT" name="Extent" index="0">original</OPTION>
+          <OUTPUT type="grid_list" id="GRIDS" name="Grids">filled</OUTPUT>
+        </TOOL>
+      </INPUT>
+      <OUTPUT type="shapes" id="BASINS" name="Drainage Basins">Drainage Basins</OUTPUT>
+    </TOOL>
+  </HISTORY>
+  <FILE></FILE>
+  <DESCRIPTION></DESCRIPTION>
+  <PROJECTION>
+    <OGC_WKT>PROJCS["WGS 84 / Pseudo-Mercator",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",0],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs"],AUTHORITY["EPSG","3857"]]</OGC_WKT>
+    <PROJ4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</PROJ4>
+    <EPSG>-1</EPSG>
+  </PROJECTION>
+</SAGA_METADATA>
